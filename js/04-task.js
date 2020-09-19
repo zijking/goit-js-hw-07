@@ -1,12 +1,12 @@
 const counterValue = document.querySelector("#value");
 
 function increment() {
-  temp = Number(counterValue.textContent);
+  const temp = Number(counterValue.textContent);
   counterValue.textContent = temp + 1;
 }
 
 function decrement(value) {
-  temp = Number(counterValue.textContent);
+  const temp = Number(counterValue.textContent);
   counterValue.textContent = temp - 1;
 }
 

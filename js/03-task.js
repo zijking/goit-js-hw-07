@@ -20,8 +20,8 @@ const galleryEl = document.querySelector("#gallery");
 
 const imgGalleryEl = images.map((item) => {
   //   console.log(item);
-  liEl = document.createElement("li");
-  imgEl = document.createElement("img");
+  const liEl = document.createElement("li");
+  const imgEl = document.createElement("img");
   imgEl.src = item.url;
   imgEl.alt = item.alt;
   liEl.append(imgEl);
