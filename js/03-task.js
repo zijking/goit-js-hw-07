@@ -19,13 +19,8 @@ const images = [
 const galleryEl = document.querySelector("#gallery");
 
 const imgGalleryEl = images.map((item) => {
-  //   console.log(item);
-  const liEl = document.createElement("li");
-  const imgEl = document.createElement("img");
-  imgEl.src = item.url;
-  imgEl.alt = item.alt;
-  liEl.append(imgEl);
-  return liEl;
+  galleryEl.insertAdjacentHTML(
+    "beforeend",
+    `<li><img src='${item.url}' alt='${item.alt}'/></li>`
+  );
 });
-
-galleryEl.append(...imgGalleryEl);
